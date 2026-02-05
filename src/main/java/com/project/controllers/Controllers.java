@@ -27,4 +27,8 @@ public class Controllers {
         MyUser m= this.myUserService.saveNewUser(myUser1);
        return ResponseEntity.ok(m);
     }
+    @GetMapping
+    public ResponseEntity<?> hello(){
+        return ResponseEntity.ok("hello");
+    }
 }
